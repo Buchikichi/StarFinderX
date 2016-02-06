@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7335DACC1C65C80900190DDC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DACB1C65C80900190DDC /* Star.swift */; };
+		7335DACE1C65CF1B00190DDC /* AstroUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DACD1C65CF1B00190DDC /* AstroUtils.swift */; };
+		7335DAD01C66322700190DDC /* hip_constellation_line.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7335DACF1C66322700190DDC /* hip_constellation_line.csv */; };
+		7335DAD21C6632C600190DDC /* hipparcos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7335DAD11C6632C600190DDC /* hipparcos.json */; };
 		736983D81C658D200007D948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736983D71C658D200007D948 /* AppDelegate.swift */; };
 		736983DA1C658D200007D948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736983D91C658D200007D948 /* ViewController.swift */; };
 		736983DD1C658D200007D948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736983DB1C658D200007D948 /* Main.storyboard */; };
 		736983DF1C658D210007D948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736983DE1C658D210007D948 /* Assets.xcassets */; };
 		736983E21C658D210007D948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736983E01C658D210007D948 /* LaunchScreen.storyboard */; };
+		736983EA1C6594DA0007D948 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736983E91C6594DA0007D948 /* SpaceView.swift */; };
+		73AEAA171C65B6C20079B7B7 /* StarCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AEAA161C65B6C20079B7B7 /* StarCatalogue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7335DACB1C65C80900190DDC /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		7335DACD1C65CF1B00190DDC /* AstroUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroUtils.swift; sourceTree = "<group>"; };
+		7335DACF1C66322700190DDC /* hip_constellation_line.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hip_constellation_line.csv; sourceTree = "<group>"; };
+		7335DAD11C6632C600190DDC /* hipparcos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hipparcos.json; sourceTree = "<group>"; };
 		736983D41C658D200007D948 /* StarFinderX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarFinderX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736983D71C658D200007D948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736983D91C658D200007D948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		736983DE1C658D210007D948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736983E11C658D210007D948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		736983E31C658D210007D948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		736983E91C6594DA0007D948 /* SpaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		73AEAA161C65B6C20079B7B7 /* StarCatalogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCatalogue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7335DAC81C65BE8A00190DDC /* rsrc */ = {
+			isa = PBXGroup;
+			children = (
+				7335DAD11C6632C600190DDC /* hipparcos.json */,
+				7335DACF1C66322700190DDC /* hip_constellation_line.csv */,
+			);
+			path = rsrc;
+			sourceTree = "<group>";
+		};
 		736983CB1C658D1F0007D948 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +75,17 @@
 		736983D61C658D200007D948 /* StarFinderX */ = {
 			isa = PBXGroup;
 			children = (
-				736983D71C658D200007D948 /* AppDelegate.swift */,
+				7335DACB1C65C80900190DDC /* Star.swift */,
+				73AEAA161C65B6C20079B7B7 /* StarCatalogue.swift */,
+				7335DACD1C65CF1B00190DDC /* AstroUtils.swift */,
 				736983D91C658D200007D948 /* ViewController.swift */,
+				736983E91C6594DA0007D948 /* SpaceView.swift */,
 				736983DB1C658D200007D948 /* Main.storyboard */,
 				736983DE1C658D210007D948 /* Assets.xcassets */,
+				736983D71C658D200007D948 /* AppDelegate.swift */,
 				736983E01C658D210007D948 /* LaunchScreen.storyboard */,
 				736983E31C658D210007D948 /* Info.plist */,
+				7335DAC81C65BE8A00190DDC /* rsrc */,
 			);
 			path = StarFinderX;
 			sourceTree = "<group>";
@@ -123,8 +149,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7335DAD21C6632C600190DDC /* hipparcos.json in Resources */,
 				736983E21C658D210007D948 /* LaunchScreen.storyboard in Resources */,
 				736983DF1C658D210007D948 /* Assets.xcassets in Resources */,
+				7335DAD01C66322700190DDC /* hip_constellation_line.csv in Resources */,
 				736983DD1C658D200007D948 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				736983DA1C658D200007D948 /* ViewController.swift in Sources */,
+				73AEAA171C65B6C20079B7B7 /* StarCatalogue.swift in Sources */,
 				736983D81C658D200007D948 /* AppDelegate.swift in Sources */,
+				7335DACC1C65C80900190DDC /* Star.swift in Sources */,
+				736983EA1C6594DA0007D948 /* SpaceView.swift in Sources */,
+				7335DACE1C65CF1B00190DDC /* AstroUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StarFinderX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = to.kit.StarFinderX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -261,10 +297,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StarFinderX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = to.kit.StarFinderX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -287,6 +327,7 @@
 				736983E81C658D210007D948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
