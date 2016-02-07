@@ -14,8 +14,7 @@ class StarCatalogue: NSObject {
     /**
      * Load the Star Catalogue.
      */
-    func load() -> Array<Star> {
-        var starArray = [Star]()
+    func load(inout starArray: [Star], inout starMap: [Int: Star]) {
         let path = NSBundle.mainBundle().pathForResource("hipparcos", ofType: "json")!
         let data = NSData(contentsOfFile: path)
         
@@ -35,10 +34,41 @@ class StarCatalogue: NSObject {
                 let star = Star(id:id, ra: ra, dec: dec, v: v, color: color, ratio: ratio)
 
                 starArray.append(star)
+                starMap[id] = star
             }
         } catch {
-            print("error!")
+            // nop
         }
-        return starArray
+    }
+
+    /**
+     * load the Constellation.
+     */
+    func loadConstellation(inout constArray: [Constellation]) {
+        let path = NSBundle.mainBundle().pathForResource("constellation", ofType: "json")!
+        let data = NSData(contentsOfFile: path)
+        
+        do {
+            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as! NSArray
+            
+            for rec in json {
+                let dic = rec as! NSDictionary
+                let name = dic["name"] as! String
+                let pos = dic["pos"] as! Int
+                let list = dic["list"] as! NSArray
+                var constellation = Constellation(name: name, pos: pos)
+
+                for row in list {
+                    let rowDic = row as! NSDictionary
+                    let from = rowDic["from"] as! Int
+                    let to = rowDic["to"] as! Int
+
+                    constellation.lines.append(ConstLine(from: from, to: to))
+                }
+                constArray.append(constellation)
+            }
+        } catch {
+            // nop
+        }
     }
 }

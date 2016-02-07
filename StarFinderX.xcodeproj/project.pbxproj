@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		7335DACC1C65C80900190DDC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DACB1C65C80900190DDC /* Star.swift */; };
 		7335DACE1C65CF1B00190DDC /* AstroUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335DACD1C65CF1B00190DDC /* AstroUtils.swift */; };
-		7335DAD01C66322700190DDC /* hip_constellation_line.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7335DACF1C66322700190DDC /* hip_constellation_line.csv */; };
 		7335DAD21C6632C600190DDC /* hipparcos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7335DAD11C6632C600190DDC /* hipparcos.json */; };
+		7345CA7F1C67032C00A7E10D /* constellation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7345CA7E1C67032C00A7E10D /* constellation.json */; };
+		7345CA811C67046600A7E10D /* Constellation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7345CA801C67046600A7E10D /* Constellation.swift */; };
 		736983D81C658D200007D948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736983D71C658D200007D948 /* AppDelegate.swift */; };
 		736983DA1C658D200007D948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736983D91C658D200007D948 /* ViewController.swift */; };
 		736983DD1C658D200007D948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736983DB1C658D200007D948 /* Main.storyboard */; };
@@ -23,8 +24,9 @@
 /* Begin PBXFileReference section */
 		7335DACB1C65C80900190DDC /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		7335DACD1C65CF1B00190DDC /* AstroUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroUtils.swift; sourceTree = "<group>"; };
-		7335DACF1C66322700190DDC /* hip_constellation_line.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hip_constellation_line.csv; sourceTree = "<group>"; };
 		7335DAD11C6632C600190DDC /* hipparcos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hipparcos.json; sourceTree = "<group>"; };
+		7345CA7E1C67032C00A7E10D /* constellation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = constellation.json; sourceTree = "<group>"; };
+		7345CA801C67046600A7E10D /* Constellation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constellation.swift; sourceTree = "<group>"; };
 		736983D41C658D200007D948 /* StarFinderX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarFinderX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736983D71C658D200007D948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736983D91C658D200007D948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +52,8 @@
 		7335DAC81C65BE8A00190DDC /* rsrc */ = {
 			isa = PBXGroup;
 			children = (
+				7345CA7E1C67032C00A7E10D /* constellation.json */,
 				7335DAD11C6632C600190DDC /* hipparcos.json */,
-				7335DACF1C66322700190DDC /* hip_constellation_line.csv */,
 			);
 			path = rsrc;
 			sourceTree = "<group>";
@@ -76,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				7335DACB1C65C80900190DDC /* Star.swift */,
+				7345CA801C67046600A7E10D /* Constellation.swift */,
 				73AEAA161C65B6C20079B7B7 /* StarCatalogue.swift */,
 				7335DACD1C65CF1B00190DDC /* AstroUtils.swift */,
-				736983D91C658D200007D948 /* ViewController.swift */,
 				736983E91C6594DA0007D948 /* SpaceView.swift */,
+				736983D91C658D200007D948 /* ViewController.swift */,
 				736983DB1C658D200007D948 /* Main.storyboard */,
 				736983DE1C658D210007D948 /* Assets.xcassets */,
 				736983D71C658D200007D948 /* AppDelegate.swift */,
@@ -152,8 +155,8 @@
 				7335DAD21C6632C600190DDC /* hipparcos.json in Resources */,
 				736983E21C658D210007D948 /* LaunchScreen.storyboard in Resources */,
 				736983DF1C658D210007D948 /* Assets.xcassets in Resources */,
-				7335DAD01C66322700190DDC /* hip_constellation_line.csv in Resources */,
 				736983DD1C658D200007D948 /* Main.storyboard in Resources */,
+				7345CA7F1C67032C00A7E10D /* constellation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +172,7 @@
 				736983D81C658D200007D948 /* AppDelegate.swift in Sources */,
 				7335DACC1C65C80900190DDC /* Star.swift in Sources */,
 				736983EA1C6594DA0007D948 /* SpaceView.swift in Sources */,
+				7345CA811C67046600A7E10D /* Constellation.swift in Sources */,
 				7335DACE1C65CF1B00190DDC /* AstroUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

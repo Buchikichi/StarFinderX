@@ -46,7 +46,8 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         self.progress.progress = 0.1
-        self.spaceView.starArray = self.catalogue.load()
+        self.catalogue.load(&self.spaceView.starArray, starMap: &self.spaceView.starMap)
+        self.catalogue.loadConstellation(&self.spaceView.constArray)
         self.progress.hidden = true
         self.indicator.stopAnimating()
         self.indicator.hidden = true

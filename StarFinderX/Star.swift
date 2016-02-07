@@ -24,7 +24,7 @@ struct Star {
         let radX = rvRad
         let decRad = self.dec
         let radZ = 0.0
-        var wy = sin(decRad) * wz
+        var wy = -sin(decRad) * wz
 
         wz = cos(decRad) * wz;
         ptX = -sin(raRad) * wz;
